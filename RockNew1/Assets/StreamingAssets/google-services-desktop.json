@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "537558988668",
+    "firebase_url": "https://rockway-6ca81-default-rtdb.europe-west1.firebasedatabase.app",
+    "project_id": "rockway-6ca81",
+    "storage_bucket": "rockway-6ca81.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:537558988668:android:b9d6b2825302be07bc16f9",
+        "android_client_info": {
+          "package_name": "com.KarenKakaduGame.RockWay"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "537558988668-v3lj0bnmd3htnn73fps2gv2hgp2uf33t.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBTf0l8dXPdSHplBVk0cEWlUr5vC9ot6uE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "537558988668-v3lj0bnmd3htnn73fps2gv2hgp2uf33t.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
