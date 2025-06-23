@@ -1,7 +1,9 @@
 ﻿using UnityEngine;
 using UnityEditor;
 using UnityEditor.Callbacks;
+#if UNITY_IOS
 using UnityEditor.iOS.Xcode;
+#endif
 using System.IO;
 using System.Xml;
 
@@ -34,6 +36,7 @@ public static class GooglePostProcessBuild
 
             if (!string.IsNullOrEmpty(appKey))
             {
+                #if UNITY_IOS
                 string plistPath = Path.Combine(buildPath, "Info.plist");
                 PlistDocument plist = new PlistDocument();
                 plist.ReadFromFile(plistPath);
@@ -43,6 +46,7 @@ public static class GooglePostProcessBuild
 
                 File.WriteAllText(plistPath, plist.WriteToString());
                 Debug.Log("GADApplicationIdentifier successfully added to Info.plist");
+                #endif
             }
             else
             {

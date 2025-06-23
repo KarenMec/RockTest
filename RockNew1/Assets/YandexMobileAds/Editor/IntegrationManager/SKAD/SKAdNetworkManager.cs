@@ -2,7 +2,9 @@
 using System.Collections.Generic;
 using System.IO;
 using UnityEditor.Callbacks;
+#if UNITY_IOS
 using UnityEditor.iOS.Xcode;
+#endif
 using UnityEditor;
 using System.Xml;
 using System.Linq;

@@ -2,7 +2,9 @@
 using System.Collections.Generic;
 using System.IO;
 using UnityEditor.Callbacks;
+#if UNITY_IOS
 using UnityEditor.iOS.Xcode;
+#endif
 using UnityEditor;
 using System.Xml;
 
@@ -23,6 +25,7 @@ namespace YandexAdsEditor
 
         private static void ModifyPlist(string pathToBuildProject)
         {
+#if UNITY_IOS
             string plistPath = Path.Combine(pathToBuildProject, "Info.plist");
             if (!File.Exists(plistPath))
             {
@@ -90,6 +93,8 @@ namespace YandexAdsEditor
             {
                 Debug.LogWarning("XML file with SKAdNetwork IDs not found at: " + XMLFilePath);
             }
+            
+#endif
         }
     }
 }
